@@ -1,6 +1,6 @@
 !#/bin/bash
 
-#install script for a fresh ubuntu install
+#install script for a fresh ubuntu desktop install
 
 #things to install
 
