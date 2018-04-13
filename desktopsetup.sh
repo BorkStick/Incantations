@@ -8,6 +8,19 @@
 #atom.io
 #gparted
 
+echo ""
+echo "=================================================================="
+echo " Welcome to the BorkSlash INITIAL SETUP SCRIPT FOR DESKTOP LINUX! "
+echo "=================================================================="
+echo ""
+
+
+echo ""
+echo "===================="
+echo " GOTTA ADD THEM REPOS! "
+echo "===================="
+echo ""
+
 #----------
 # add repos
 #----------
@@ -22,12 +35,26 @@ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key ad
 echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
 
 
+clear
+echo ""
+echo "============================================="
+echo " UPDATTTTEEEEEEEEEE UPGRADDDDDDDDDEEEEEEEEE! "
+echo "============================================="
+echo ""
 
 #----------
 # basic update
 #----------
 #check for upgrades then check for upgrades
 sudo apt update -y && sudo apt upgrade -y
+
+
+clear
+echo ""
+echo "========================="
+echo " INSATALL THEM PROGRAMS! "
+echo "========================="
+echo ""
 
 #----------
 # install apps
@@ -44,6 +71,12 @@ sudo dpkg -i gitkraken-amd64.deb
 
 
 
+clear
+echo ""
+echo "===================="
+echo " SCRIPT TIME! "
+echo "===================="
+echo ""
 
 #----------
 # scripts
@@ -52,6 +85,13 @@ sudo dpkg -i gitkraken-amd64.deb
 git clone https://github.com/GalaticStryder/gnome-terminal-colors-dracula
 ./gnome-terminal-colors-dracula/install.sh
 
+
+clear
+echo ""
+echo "========================="
+echo " DEEZ DEM DOTFILES! "
+echo "========================="
+echo ""
 
 #----------
 # dotfiles
@@ -77,6 +117,6 @@ sudo apt-get install -y ubuntu-restricted-extras
 clear
 echo ""
 echo "===================="
-echo " TIME FOR A REBOOT! "
+echo " Jobs Finished! "
 echo "===================="
 echo ""
