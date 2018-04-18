@@ -34,6 +34,9 @@ sudo add-apt-repository ppa:webupd8team/atom
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
 
+#enpass
+echo "deb http://repo.sinew.in/ stable main" | sudo tee /etc/apt/sources.list.d/enpass.list
+wget -O - https://dl.sinew.in/keys/enpass-linux.key | sudo apt-key add -
 
 clear
 echo ""
@@ -61,7 +64,7 @@ echo ""
 #----------
 
 # install all the apps
-AppList="vim i3 rofi htop tmux ffmpeg gdebi build-essential ffmpeg filezilla git curl gparted cmatrix exfat-fuse exfat-utils dconf-cli software-properties-common openssh-server atom ranger obs-studio google-chrome-stable"
+AppList="vim i3 rofi htop tmux ffmpeg gdebi build-essential ffmpeg filezilla git curl gparted cmatrix exfat-fuse exfat-utils dconf-cli software-properties-common openssh-server atom ranger obs-studio google-chrome-stable enpass"
 sudo apt install -y $AppList
 
 
