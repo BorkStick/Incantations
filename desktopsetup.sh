@@ -64,7 +64,7 @@ echo ""
 #----------
 
 # install all the apps
-AppList="vim i3 rofi htop tmux ffmpeg gdebi build-essential ffmpeg filezilla git curl gparted cmatrix exfat-fuse exfat-utils dconf-cli software-properties-common openssh-server atom ranger obs-studio google-chrome-stable enpass"
+AppList="vim i3 rofi htop tmux ffmpeg gdebi build-essential ffmpeg filezilla git curl gparted cmatrix exfat-fuse exfat-utils dconf-cli software-properties-common openssh-server atom ranger obs-studio google-chrome-stable enpass vlc"
 sudo apt install -y $AppList
 
 
