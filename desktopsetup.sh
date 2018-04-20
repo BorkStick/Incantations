@@ -45,9 +45,7 @@ echo " UPDATTTTEEEEEEEEEE UPGRADDDDDDDDDEEEEEEEEE! "
 echo "============================================="
 echo ""
 
-#----------
-# basic update
-#----------
+
 #check for upgrades then check for upgrades
 sudo apt update -y && sudo apt upgrade -y
 
@@ -59,9 +57,6 @@ echo " INSATALL THEM PROGRAMS! "
 echo "========================="
 echo ""
 
-#----------
-# install apps
-#----------
 
 # install all the apps
 AppList="vim i3 rofi htop tmux ffmpeg gdebi build-essential ffmpeg filezilla git curl gparted cmatrix exfat-fuse exfat-utils dconf-cli software-properties-common openssh-server atom ranger obs-studio google-chrome-stable enpass vlc"
@@ -81,9 +76,7 @@ echo " SCRIPT TIME! "
 echo "===================="
 echo ""
 
-#----------
-# scripts
-#----------
+
 #dracula theme for gnome terminal
 git clone https://github.com/GalaticStryder/gnome-terminal-colors-dracula
 ./gnome-terminal-colors-dracula/install.sh
@@ -114,9 +107,7 @@ ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
 #----------
 sudo apt-get install -y ubuntu-restricted-extras
 
-#----------
-# prompt for a reboot
-#----------
+
 clear
 echo ""
 echo "===================="
