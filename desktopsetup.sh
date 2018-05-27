@@ -129,6 +129,9 @@ echo ""
 
 # I should be able to set this shit up so it pulls my dotfiles from github/gitlab
 # todo do get the dotfiles repo setup and working
+git clone http://borkslash.com:8087/BorkStick/dotfiles.git ~/dotfiles
+# need to symlink them
+
 
 #tmux
 git clone https://github.com/4ciiDic/tmux.conf.git ~/.tmux
