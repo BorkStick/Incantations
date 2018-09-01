@@ -71,7 +71,7 @@ echo ""
 
 # look at this fancy shit. programing fuck yeah
 # install all the apps
-AppList="autokey-gtk vim i3 rofi htop tmux ffmpeg gdebi build-essential ffmpeg filezilla git curl hexchat gparted cmatrix exfat-fuse exfat-utils dconf-cli software-properties-common openssh-server atom ranger obs-studio google-chrome-stable enpass vlc virtualbox gnome-tweaks vagrant"
+AppList="autokey-gtk vim i3 rofi htop tmux ffmpeg gdebi build-essential ffmpeg filezilla git curl hexchat gparted cmatrix exfat-fuse exfat-utils dconf-cli software-properties-common openssh-server atom ranger obs-studio google-chrome-stable enpass vlc virtualbox gnome-tweaks vagrant libcanberra-gtk0 libcanberra-gtk-module libgnome-keyring-common libgnome-keyring-dev"
 sudo apt install -y $AppList
 
 # install atom addons
