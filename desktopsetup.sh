@@ -7,6 +7,8 @@
 #chrome
 #atom.io
 #gparted
+WallURL="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-72079.png"
+
 clear
 echo ""
 echo "=================================================================="
@@ -141,8 +143,8 @@ git clone http://borkslash.com:8087/BorkStick/dotfiles.git ~/dotfiles
 
 # set desktop wallpaper
 mkdir ~/Pictures/Wallpapers
-wget -P ~/Pictures/Wallpapers https://release.gitkraken.com/linux/gitkraken-amd64.deb
-gsettings set org.gnome.desktop.background picture-uri file:////home/aciidic/Pictures/Wallpapers/wallpaper.jpg
+wget -P ~/Pictures/Wallpapers $WallURL
+gsettings set org.gnome.desktop.background picture-uri file:////home/aciidic/Pictures/Wallpapers/*
 
 
 # todo figure out how to add in my hotkeys
