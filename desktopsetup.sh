@@ -18,6 +18,9 @@ echo ""
 
 #tewaked for ubuntu 18.04
 
+# TODO: need to add a way to select what to install
+
+
 
 
 echo ""
@@ -80,13 +83,13 @@ apm install -y $AtomList
 
 
 
-# todo need to make this not download to the scrips folder
+# TODO: need to make this not download to the scrips folder
 # wget to /tmp then dpkg it from there
 #GITKRACKEN
 wget -P /tmp https://release.gitkraken.com/linux/gitkraken-amd64.deb
 sudo dpkg -i /tmp/gitkraken-amd64.deb
 
-# install youtube-dl
+# Install youtube-dl
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
@@ -96,7 +99,7 @@ sudo snap install discord
 
 
 
-# todo
+# TODO:
 # install gnome extentions
 
 
@@ -130,15 +133,13 @@ echo ""
 #----------
 
 # I should be able to set this shit up so it pulls my dotfiles from github/gitlab
-# todo do get the dotfiles repo setup and working
+# TODO: do get the dotfiles repo setup and working
 git clone http://borkslash.com:8087/BorkStick/dotfiles.git ~/dotfiles
 
 # need to symlink them
-~/dotfiles/bootstrap.sh
 
 
-
-# todo
+# TODO:
 # set theme to adwaita-dark
 
 # set desktop wallpaper
@@ -147,12 +148,13 @@ wget -P ~/Pictures/Wallpapers $WallURL
 gsettings set org.gnome.desktop.background picture-uri file:////home/aciidic/Pictures/Wallpapers/*
 
 
-# todo figure out how to add in my hotkeys
+# TODO: figure out how to add in my hotkeys
+# alt+space= launches rofi
+# super+enter= launches terminal
 # hotkeys
 
-# todo copy over autokeys
-
-#kodi
+# TODO: Make autokeys
+# TODO: copy over autokeys
 
 #----------
 # update system settings
@@ -172,4 +174,5 @@ echo ""
 echo "===================="
 echo " Jobs Finished! "
 echo "===================="
-echo ""
+
+
