@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 #install script for a fresh ubuntu desktop install
 
