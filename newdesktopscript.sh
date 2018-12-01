@@ -2,10 +2,13 @@
 # Bash Menu Script Example
 
 
-# utokey-gtk vim i3 rofi htop tmux ffmpeg gdebi build-essential ffmpeg filezilla git curl hexchat gparted cmatrix exfat-fuse exfat-utils dconf-cli software-properties-common openssh-server atom ranger obs-studio google-chrome-stable enpass vlc virtualbox gnome-tweaks vagrant libcanberra-gtk0 libcanberra-gtk-module libgnome-keyring-common libgnome-keyring-dev
-MinAppList="vim git"
-BasicAppList=""
-FullAppList=""
+# autokey-gtk vim i3 rofi htop tmux ffmpeg gdebi build-essential ffmpeg filezilla git curl hexchat gparted cmatrix exfat-fuse exfat-utils 
+# dconf-cli software-properties-common openssh-server atom ranger obs-studio google-chrome-stable enpass vlc virtualbox gnome-tweaks vagrant 
+# libcanberra-gtk0 libcanberra-gtk-module libgnome-keyring-common libgnome-keyring-dev
+
+MinAppList="vim git build-essential software-properties-common openssh-server exfat-fuse exfat-utils htop "
+BasicAppList="$MinAppList cmatrix ffmpeg tmux gdebi filezilla vlc"
+FullAppList="$BasicAppList hexchat gparted virtualbox vagrant" 
 ManualAppList=""
 
 # Functions
@@ -17,7 +20,7 @@ basic() {
     #clear
     echo "Starting with the $opt""s"
     sudo apt install -y $BasicAppList
-    dotfiles
+    #dotfiles
     
 }
 
