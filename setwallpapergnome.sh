@@ -1,5 +1,5 @@
 #!/bin/bash
-# a script that will download and set the wallpaper
+#gnome script that will download and set the wallpaper
 
 # set desktop wallpaper
 WallURL="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-72079.png"
