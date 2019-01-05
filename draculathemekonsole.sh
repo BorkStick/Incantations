@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 # set the konsole to the dracula theme
 #
 
