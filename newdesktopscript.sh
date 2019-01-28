@@ -8,7 +8,7 @@
 
 MinAppList="vim git build-essential software-properties-common openssh-server exfat-fuse exfat-utils htop "
 BasicAppList="$MinAppList cmatrix ffmpeg tmux gdebi filezilla vlc"
-FullAppList="$BasicAppList hexchat gparted virtualbox vagrant" 
+FullAppList="$BasicAppList hexchat gparted virtualbox vagrant nodejs npm" 
 ManualAppList=""
 
 # Functions
