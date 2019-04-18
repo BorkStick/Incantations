@@ -7,3 +7,4 @@
 wget -P /tmp https://release.gitkraken.com/linux/gitkraken-amd64.deb
 sudo dpkg -i /tmp/gitkraken-amd64.deb
 sudo apt install -y libgnome-keyring-common libgnome-keyring-dev
+sudo apt -y --fix-broken install
