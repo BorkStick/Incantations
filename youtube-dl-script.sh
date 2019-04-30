@@ -6,11 +6,11 @@ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/you
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
 #download video
-youtube-dl <video URL>
+#youtube-dl <video URL>
 
 
 #download mp3
-youtube-dl --extract-audio --audio-format mp3 <video URL>
+#youtube-dl --extract-audio --audio-format mp3 <video URL>
 
 
 
