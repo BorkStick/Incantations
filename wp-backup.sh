@@ -1,9 +1,13 @@
-#!/bin/bash
-# script that will backup the wordpress install and DB then zip it up and put it on the NAS
+#!/bin/bash 
 
-# copy INSTALL
+#get the current date
+BACKUPTIME=`date +%b-%d-%y` 
 
-# dump INSTALL DB 
+#create a backup file using the current date in it's name
+DESTINATION=/home/aciidic/BACKUPS/backup-$BACKUPTIME.tar.gz 
 
-# mv DB to INSTALL/
+#the folder that contains the files that we want to backup
+SOURCEFOLDER=/home/aciidic/Pictures/ 
 
+#create the backup
+tar -cpzf $DESTINATION $SOURCEFOLDER #create the backup
