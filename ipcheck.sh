@@ -7,6 +7,8 @@ if [ -z $1 ]
 then
 echo ""
 printf "Enter the IP name you want to check and press [ENTER]"
+printf -- '\n';
+
 read IP
 fi
 
