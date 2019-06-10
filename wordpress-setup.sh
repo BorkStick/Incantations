@@ -13,6 +13,7 @@ read INSTALL
 fi
 
 # Set up database
+# TODO remove hardcoded mysql password and change that pass
 DB_PASS="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 13)"
 sudo mysql -u root -pRp0U0V5Ubvkc --execute="CREATE DATABASE wp_$INSTALL;"
 sudo mysql -u root -pRp0U0V5Ubvkc --execute="CREATE USER '$INSTALL'@'localhost' IDENTIFIED BY '$DB_PASS';"
