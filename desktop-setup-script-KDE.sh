@@ -6,23 +6,13 @@
 # dconf-cli software-properties-common openssh-server atom ranger obs-studio google-chrome-stable enpass vlc virtualbox gnome-tweaks vagrant 
 # libcanberra-gtk0 libcanberra-gtk-module libgnome-keyring-common libgnome-keyring-dev
 
-MinAppList="vim git curl unzip build-essential software-properties-common openssh-server exfat-fuse exfat-utils htop"
-BasicAppList="$MinAppList cmatrix ffmpeg tmux copyq shutter rofi code google-chrome-stable filezilla ranger vlc"
+MinAppList="vim git curl unzip build-essential software-properties-common apt-transport-https wget openssh-server exfat-fuse exfat-utils htop"
+BasicAppList="$MinAppList cmatrix ffmpeg tmux copyq shutter rofi filezilla ranger vlc"
 FullAppList="$BasicAppList hexchat gparted virtualbox vagrant ansible nodejs npm" 
 ManualAppList=""
 
 # Functions
 
-# basic
-# 
-#
-basic() {
-    #clear
-    start
-    sudo apt install -y $BasicAppList
-    #dotfiles
-    
-}
 
 
 # min
@@ -31,11 +21,21 @@ basic() {
 min() {
     #clear
     start
-    dotfiles
-    #sudo apt install -y $MinAppList
+    sudo apt install -y $MinAppList
     
 }
 
+# basic
+# 
+#
+basic() {
+    #clear
+    start
+    sudo apt install -y $BasicAppList
+    dotfiles
+    vscodeInstall
+    copyqInstall
+}
 
 # full
 #
@@ -47,6 +47,8 @@ full(){
     dotfiles
     #draculaTheme
     ytdlInstall
+    vscodeInstall
+    copyqInstall
     vscodePlugins
 }
 
@@ -135,6 +137,33 @@ echo ""
 echo ""
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
+}
+
+# vscode install
+vscodeInstall() {
+echo ""
+echo "===================="
+echo " Install VS Code "
+echo "===================="    
+echo ""
+echo ""
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update -y
+sudo apt install -y code
+}
+
+# copyq install
+copyqInstall() {
+echo ""
+echo "===================="
+echo " Install CopyQ "
+echo "===================="    
+echo ""
+echo ""
+sudo add-apt-repository ppa:hluk/copyq
+sudo apt update -y
+sudo apt install -y copyq
 }
 
 # this will grab all my essential files that i use daily scripts / notes / projects
