@@ -5,6 +5,6 @@
 DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "current dir is $DIR"
-sudo chmod +x $DIR/*
+sudo chmod -R +x $DIR/*
 
-echo "Incantations in $DIR are now exicutible"
+echo "Spells in $DIR are now exicutible"
