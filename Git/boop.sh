@@ -3,7 +3,7 @@
 
 # need to find a way to use string instead of arg
 # mabey ask for message and use that
-read -p "Commit message here" -n 1 -r
+read -p "Commit message here: " -n 1 -r
 echo
 
 COMMIT_MSG=$REPLY
